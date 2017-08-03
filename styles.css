@@ -6,19 +6,6 @@
   position: relative;
 }
 
-body {
-  font: 1em 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 300;
-}
-
-#top-of-page {
-  background-color: #ffffff;
-  padding-top: 22px;
-  padding-bottom: 44px;
-}
-
 .section-gray {
   background-color: #d8d8d8;
   padding-top: 22px;
@@ -31,23 +18,29 @@ body {
   padding-bottom: 44px;
 }
 
-footer {
-  background-color: #d8d8d8;
-  padding-top: 22px;
-  padding-bottom: 44px;
-  border-top: 1px solid black;
+.person-icon {
+  max-width: 200px;
+  margin: 0 auto;
 }
 
-#top-of-page .container {
-  padding-bottom: 88px;
+.person-icon img {
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  display: block;
 }
 
-#top-of-page header {
-  padding-top: 22px;
+.profile {
+  display: block;
 }
 
-#top-of-page .container nav {
-  float: right;
+
+/* TEXT */
+body {
+  font: 1em 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
 }
 
 h1 {
@@ -70,9 +63,196 @@ h2 {
   font-size: 26px;
 }
 
-#sponsors h2 {
+h2.header-center {
   text-align: center;
   max-width: 100%;
+}
+
+h3, h4, h5{
+  text-align: center;
+}
+
+h6 {
+  text-align: left;
+  font-size: 18px !important;
+}
+
+a.logo {
+  float: left;
+  width: 100px;
+  cursor: pointer;
+}
+
+p.page-subtitle {
+  color: black;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+p.large-subtitle {
+  color: black;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+}
+
+p.large-subtitle-left {
+  color: black;
+  text-align: left;
+  margin-right: 40px;
+  max-width: 400px;
+  font-size: 16px;
+}
+
+p.small-subtitle {
+  color: black;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  font-size: 14px;
+}
+
+p.history-subtitle {
+  color: black;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+}
+
+p.name {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+/* NAVIGATION */
+nav {
+  display: block;
+}
+
+header nav ul {
+  display: inline-block;
+}
+
+header nav ul li {
+  margin: 0 35px 0 0;
+}
+
+header.white-header nav ul li a {
+  color: gray;
+}
+
+header.white-header nav ul li a:hover {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+/* BUTTON */
+.button {
+  font-size: 16px;
+  border: 1px solid #1a707f;
+  letter-spacing: 0;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 22px;
+  display: inline-block;
+  background-color: #1a707f;
+  color: white;
+  min-width: 166px;
+}
+
+.button.alternate {
+  color: #1A707F;
+  border: 1px solid #1a707f;
+  background-color: transparent;
+  margin-right: 16px;
+}
+
+.button-wrapper {
+  margin-top: 22px;
+  display: block;
+}
+
+.button-wrapper-small {
+  margin-top: 0px;
+  display: block;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  background-color: #d8d8d8;
+  padding-top: 22px;
+  padding-bottom: 44px;
+  border-top: 1px solid black;
+}
+
+.footer-chunk-1 .footer-chunk-2 .footer-chunk-3 {
+  display: block;
+  margin: 0;
+}
+
+.footer-chunk-1 {
+  width: 70%;
+  float: left;
+}
+
+.footer-chunk-2 {
+  width: 30%;
+  float: right;
+}
+
+.footer-chunk-3 {
+  clear: both;
+  width: 100%;
+  text-align: right;
+}
+
+.button-right {
+  float: right;
+}
+
+.menu-footer-1-container {
+  margin: 22px auto;
+}
+
+.text-widget{
+  margin-bottom: 22px;
+}
+
+
+/* HOME PAGE SECTIONS */
+#top-of-page {
+  background-color: #ffffff;
+  padding-top: 22px;
+  padding-bottom: 44px;
+}
+
+#top-of-page .container {
+  padding-bottom: 88px;
+}
+
+#top-of-page header {
+  padding-top: 22px;
+}
+
+#top-of-page .container nav {
+  float: right;
 }
 
 #about img {
@@ -104,41 +284,6 @@ h2 {
   margin-right: -70px;
 }
 
-h3, h4, h5{
-  text-align: center;
-}
-
-a.logo {
-  float: left;
-  width: 100px;
-  cursor: pointer;
-}
-
-nav {
-  display: block;
-}
-
-header nav ul {
-  display: inline-block;
-}
-
-header nav ul li {
-  margin: 0 35px 0 0;
-}
-
-header.white-header nav ul li a {
-  color: gray;
-}
-
-header.white-header nav ul li a:hover {
-  color: black;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
 #sponsors li {
   display: inline-block;
   margin: 22px 44px;
@@ -167,94 +312,9 @@ ul {
   margin-left: 33px;
 }
 
-.menu-footer-1-container {
-  margin: 22px auto;
-}
-
-.text-widget{
-  margin-bottom: 22px;
-}
-
-.footer-chunk-1 .footer-chunk-2 .footer-chunk-3 {
-  display: block;
-  margin: 0;
-}
-
-.footer-chunk-1 {
-  width: 70%;
-  float: left;
-}
-
-.footer-chunk-2 {
-  width: 30%;
+#schedule-clothing img {
+  width: 50%;
   float: right;
-}
-
-.footer-chunk-3 {
-  clear: both;
-  width: 100%;
-  text-align: right;
-}
-
-p.page-subtitle {
-  color: black;
-  width: 100%;
-  max-width: 700px;
-  margin: 10px auto;
-  text-align: center;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
-}
-
-p.about-subtitle {
-  color: black;
-  text-align: left;
-  width: 100%;
-  max-width: 400px;
-  font-size: 16px;
-}
-
-p.contact-subtitle {
-  color: black;
-  text-align: left;
-  width: 100%;
-  max-width: 400px;
-  font-size: 14px;
-}
-
-p.history-subtitle {
-  color: black;
-  text-align: center;
-  width: 100%;
-  font-size: 14px;
-}
-
-.button-wrapper{
-  margin-top: 22px;
-  display: block;
-}
-
-.button {
-    font-size: 16px;
-    border: 1px solid #1a707f;
-    letter-spacing: 0;
-    font-weight: 600;
-    text-align: center;
-    padding: 14px 22px;
-    display: inline-block;
-    background-color: #1a707f;
-    color: white;
-    min-width: 166px;
-}
-
-.button.alternate {
-  color: #1A707F;
-  border: 1px solid #1a707f;
-  background-color: transparent;
-  margin-right: 16px;
-}
-
-.button-footer {
-  float: right;
+  margin-left: 12px;
+  margin-right: -70px;
 }

@@ -6,7 +6,7 @@ Trashion Vision
 
 <head>
 <meta charset="utf-8">
-<title>vision</title>
+<title>models</title>
 
 <!-- Load any supplemental Javascript libraries here -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -29,7 +29,10 @@ Trashion Vision
 
 
 <script>
-$(document).ready(function(){});
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
 //----------end of document.ready-------------
 </script>
 </head>
@@ -39,64 +42,65 @@ $(document).ready(function(){});
 
 <!-- SECTION 1 TOP OF PAGE-->
 <section id="top-of-page">
-  <header class="white-header">
-    <div class="container">
-      <a href="home.html" class="logo">MIT Trashion Show</a>
-      <nav>
-        <ul id="menu-main" class="menu"><li id="menu-main-vision"><a href="vision.html">Vision</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-schedule"><a href="schedule.html">Schedule</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-designers"><a href="designers.html">Designers</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-models"><a href="models.html">Models</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-gallery"><a href="gallery.html">Gallery</a></li></ul>
-      </nav>
-    </div>
-    <div class="container">
-      <h1>Our vision is to blah blah</h1>
-      <p class=page-subtitle>Sustainable fashion is super important because of many reasons.</p>
-    </div>
+  <header id="header" class="white-header">
   </header>
+  <div class="container">
+    <h1>So you think you can model.</h1>
+    <p class=page-subtitle>Modeling is super easy and there are lots of perks.</p>
+  </div>
+</section>
+
+<!-- SECTION 2 HOW TO APPLY -->
+<section id="models-how-to-apply" class="section-gray">
+  <div class="container">
+    <img src="" alternate="image of model">
+    <h2>Eligibility</h2>
+    <ul.circle>
+      <li>Undergrad or grad student at any college or university.</li>
+      <li>Must be present at the show, Friday December 2nd.</li>
+      <li>Must complete all Model Check-Ins.</li>
+    </ul.circle>
+    <br>
+    <p class="small-subtitle">Many designers already have models, while some do not.
+      If you wish to model for the show but do not know a designer, we encourage you
+      to attend the Designer-Model Mixer on October 31 to meet designers who are
+      interested in having you as a model. This is not a required event.
+    </p>
+    <h6>Deadline: Friday November 12</h6>
+    <span class="button-wrapper">
+      <a class="button" href="">Apply</a>
+    </span>
+  </div>
 </section>
 
 
+<!-- SECTION 3 MODEL EVENTS-->
+<section id="model-events" class="section-white">
+  <div class="container">
+    <h2>Designer Events</h2>
+    <ul>
+      <li>OCT 31 Designer-Model Mixer</li>
+      <li>NOV 12 Model Application Due</li>
+      <li>NOV 20 Model Workshop</li>
+      <li>DEC 2 The Trashion Show</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- SECTION 4 AWARDS-->
+<section id="model-awards" class="section-gray">
+  <div class="container">
+    <h2>Awards and Criteria</h2>
+    <ul>
+      <li>Trashion's Next Top Model</li>
+      <li>Best Hair and Makeup</li>
+    </ul>
+  </div>
+</section>
+
 <!-- footer start-->
 <footer id="footer">
-  <div class="container">
-    <div>
-      <ul>
-        <li class="footer-chunk-1">
-          <div class="menu-footer-1-container">
-            <ul id="footer-menu-1">
-              <li class="footer-menu-item"><a href="">Vision</a></li>
-              <li class="footer-menu-item"><a href="">Schedule</a></li>
-              <li class="footer-menu-item"><a href="">Designers</a></li>
-              <li class="footer-menu-item"><a href="">Models</a></li>
-              <li class="footer-menu-item-last"><a href="">Gallery</a></li>
-            </ul>
-          </div>
-          <div class="text-widget">
-            2017 MIT UA Committee on Sustainability. All rights reserved.
-          </div>
-        </li>
-        <li class="footer-chunk-2">
-          <div class="menu-footer-2-container">
-            <span class="button-wrapper">
-              <a class="button alternate button-footer" href="">Contact Us</a>
-            </span>
-          </div>
-        </li>
-        <li class="footer-chunk-3">
-          <div class="menu-footer-3-container">
-            <ul id="footer-menu-3">
-              <li class="footer-menu-item"><a href="">Facebook</a></li>
-              <li class="footer-menu-item"><a href="">Instagram</a></li>
-              <li class="footer-menu-item"><a href="">Snapchat</a></li>
-              <li class="footer-menu-item"><a href="">Twitter</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
 </footer>
 
 </body>

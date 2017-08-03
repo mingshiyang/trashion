@@ -29,7 +29,10 @@ Trashion Home
 
 
 <script>
-$(document).ready(function(){});
+$(document).ready(function(){
+  $("#header").load("header.html")
+  $("#footer").load("footer.html");
+});
 //----------end of document.ready-------------
 </script>
 </head>
@@ -39,23 +42,13 @@ $(document).ready(function(){});
 
 <!-- SECTION 1 TOP OF PAGE-->
 <section id="top-of-page">
-  <header class="white-header">
-    <div class="container">
-      <a href="home.html" class="logo">MIT Trashion Show</a>
-      <nav>
-        <ul id="menu-main" class="menu"><li id="menu-main-vision"><a href="vision.html">Vision</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-schedule"><a href="schedule.html">Schedule</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-designers"><a href="designers.html">Designers</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-models"><a href="models.html">Models</a></li></ul>
-        <ul id="menu-main" class="menu"><li id="menu-main-gallery"><a href="gallery.html">Gallery</a></li></ul>
-      </nav>
-    </div>
-    <div class="container">
-      <h1>Sustainable Fashion</h1>
-      <p class=page-subtitle>The MIT Trashion Show is where students make clothes from trash,
-      and it is sustainable probably.</p>
-    </div>
+  <header id="header" class="white-header">
   </header>
+  <div class="container">
+    <h1>Sustainable Fashion</h1>
+    <p class=page-subtitle>The MIT Trashion Show is where students make clothes from trash,
+    and it is sustainable probably.</p>
+  </div>
 </section>
 
 <!-- SECTION 2 ABOUT-->
@@ -63,7 +56,7 @@ $(document).ready(function(){});
   <div class="container">
     <img src="" alt="add a picture here">
     <h2>Bringing together fashion and sustainability</h2>
-    <p class="about-subtitle">The MIT Trashion Show is a fashion show that celebrates creative fashion design
+    <p class="large-subtitle">The MIT Trashion Show is a fashion show that celebrates creative fashion design
       and promotes waste reduction and sustainability. Student designers from MIT and
       other Boston area schools create pieces made of trash and recycled materials, which
       are then modeled on our runway. Trashion was founded in 2011, is an annual event run
@@ -114,7 +107,7 @@ $(document).ready(function(){});
 <!-- SECTION 4 SPONSORS-->
 <section id="sponsors" class="section-gray">
   <div class="container">
-    <h2>Thank You to Our Sponsors</h2>
+    <h2 class="header-center">Thank You to Our Sponsors</h2>
     <ul>
       <li>A</li>
       <li>B</li>
@@ -131,12 +124,12 @@ $(document).ready(function(){});
   <div class="container">
     <img src="" alternate="image of people">
     <h2>Who We Are</h2>
-    <p class="contact-subtitle">The Trashion Show is a subcommittee of the UA Committee on Sustainability. We are a
+    <p class="small-subtitle">The Trashion Show is a subcommittee of the UA Committee on Sustainability. We are a
     student-run organization. Our objective is to raise awareness for sustainability in
     fashion and educate people on how to be more sustainable.</p>
 
     <h3>Join Us</h3>
-    <p class="contact-subtitle">If you are interested in being a part of our subcommittee, please apply through the
+    <p class="small-subtitle">If you are interested in being a part of our subcommittee, please apply through the
     UA Committee on Sustainability application by September 15th.</p>
 
     <span class="button-wrapper">
@@ -149,43 +142,6 @@ $(document).ready(function(){});
 
 <!-- footer start-->
 <footer id="footer">
-  <div class="container">
-    <div>
-      <ul>
-        <li class="footer-chunk-1">
-          <div class="menu-footer-1-container">
-            <ul id="footer-menu-1">
-              <li class="footer-menu-item"><a href="">Vision</a></li>
-              <li class="footer-menu-item"><a href="">Schedule</a></li>
-              <li class="footer-menu-item"><a href="">Designers</a></li>
-              <li class="footer-menu-item"><a href="">Models</a></li>
-              <li class="footer-menu-item-last"><a href="">Gallery</a></li>
-            </ul>
-          </div>
-          <div class="text-widget">
-            2017 MIT UA Committee on Sustainability. All rights reserved.
-          </div>
-        </li>
-        <li class="footer-chunk-2">
-          <div class="menu-footer-2-container">
-            <span class="button-wrapper">
-              <a class="button alternate button-footer" href="">Contact Us</a>
-            </span>
-          </div>
-        </li>
-        <li class="footer-chunk-3">
-          <div class="menu-footer-3-container">
-            <ul id="footer-menu-3">
-              <li class="footer-menu-item"><a href="">Facebook</a></li>
-              <li class="footer-menu-item"><a href="">Instagram</a></li>
-              <li class="footer-menu-item"><a href="">Snapchat</a></li>
-              <li class="footer-menu-item"><a href="">Twitter</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
 </footer>
 
 </body>
